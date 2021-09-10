@@ -38,6 +38,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Wall.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/2020.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -629,6 +631,9 @@
     <Reference Include="Unity.ML-Agents">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.ML-Agents.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Barracuda.ONNX">
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Barracuda.ONNX.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
@@ -691,9 +696,6 @@
     </Reference>
     <Reference Include="Unity.ML-Agents.CommunicatorObjects">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Barracuda.ONNX">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Barracuda.ONNX.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
