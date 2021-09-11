@@ -36,10 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Wall.cs" />
-     <Compile Include="Assets\Scripts\Enemy.cs" />
+     <None Include="Assets\NavMeshComponents\ProjectSettings\ProjectVersion.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/2020.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -263,22 +264,22 @@
         <HintPath>C:/Program Files/2020.3.14f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.ml-agents@1.7.0-preview/Plugins/System.IO.Abstractions.dll</HintPath>
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Plugins/System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.burst@1.3.4/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.barracuda@1.2.1-preview/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.barracuda@2.0.0-pre.3/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.ml-agents@1.7.0-preview/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.ml-agents@1.7.0-preview/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.ml-agents@1.7.0-preview/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
@@ -634,9 +635,6 @@
     <Reference Include="Unity.Barracuda.ONNX">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Barracuda.ONNX.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Barracuda.iOSBLAS">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Barracuda.iOSBLAS.dll</HintPath>
     </Reference>
@@ -645,9 +643,6 @@
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -658,17 +653,11 @@
     <Reference Include="Unity.Barracuda">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Barracuda.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
@@ -676,14 +665,29 @@
     <Reference Include="UnityEditor.UI">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ML-Agents.CommunicatorObjects">
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda.Editor">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.Barracuda.Editor.dll</HintPath>
@@ -694,11 +698,24 @@
     <Reference Include="Unity.ML-Agents.Editor">
         <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.ML-Agents.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ML-Agents.CommunicatorObjects">
-        <HintPath>C:/Users/LENOVO/Desktop/SuryaElz Game/ML Agents/Belajar ML Agents/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{d07929ce-6858-5d3b-f493-4e9fba8d78f2}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{c1895afe-5c19-a3f9-f40e-35792242d8be}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{fc940cd5-01a7-35e2-431f-2cf71a3ee924}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{d6caa479-7505-1020-442b-eb2b874b41a8}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -1,9 +1,10 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
+using UnityEngine.AI;
 
 public class Player : Agent
 {
@@ -12,6 +13,26 @@ public class Player : Agent
     [SerializeField] private Material winMaterial;
     [SerializeField] private Material loseMaterial;
     [SerializeField] private MeshRenderer groundMeshRenderer;
+
+    public Camera cam;
+    public NavMeshAgent agent;
+
+
+    void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+            Debug.Log("MOUSE POSITION : " + Input.mousePosition);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                agent.SetDestination(hit.point);
+            }
+        }
+    }
 
     public override void OnEpisodeBegin()
     {
@@ -53,12 +74,14 @@ public class Player : Agent
         {
             SetReward(+1f);
             groundMeshRenderer.material = winMaterial;
+            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
             EndEpisode();
         }
         if (other.TryGetComponent<Wall>(out Wall wall))
         {
             SetReward(-1f);
             groundMeshRenderer.material = loseMaterial;
+            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
             EndEpisode();
         }
     }
